@@ -135,7 +135,39 @@
   .fbar{margin-top:18px;display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:#9aa1a1}
 
   .chat{position:fixed;right:22px;bottom:22px;width:56px;height:56px;border-radius:50%;background:#ff0051;box-shadow:0 8px 24px rgba(255,0,81,.4);z-index:50}
-  @media(max-width:900px){.hero-in,.grid3,.sblock{grid-template-columns:1fr}.hero-l h1{font-size:38px}.fcols{grid-template-columns:1fr 1fr}}
+  @media(max-width:900px){
+    .wrap{padding:0 20px}
+    .hero{padding:34px 0 18px}
+    .hero-in,.grid3,.sblock{grid-template-columns:1fr;gap:26px}
+    .hero-l h1{font-size:34px}
+    .hero-l p.sub{font-size:15px;margin:14px 0 20px}
+    .sechead{font-size:29px}
+    .sblock h2{font-size:25px}
+    .whysub{font-size:15px}
+    .fcols{grid-template-columns:1fr 1fr}
+    .nav .mid{display:none}
+    .boostcard{padding:26px 24px}
+    .boostcard .bbig{font-size:38px}
+    .prizevis,.photovis{height:260px}
+    .prizevis .big{font-size:96px}
+    .fcta{padding:48px 18px}
+    .fcta h2{font-size:27px}
+  }
+  @media(max-width:560px){
+    .hero-l h1{font-size:29px}
+    .sechead{font-size:24px}
+    .boostcard{padding:22px 20px}
+    .boostcard .bbig{font-size:30px}
+    .boostcard .blab{font-size:15px}
+    .appicon{width:54px;height:54px;border-radius:15px}
+    .prizevis .big{font-size:78px}
+    .fcta h2{font-size:22px}
+    .fcta .row{flex-direction:column}
+    .fcols{grid-template-columns:1fr}
+    .nav{padding:0 16px}
+    .login{display:none}
+    .cta-row{flex-wrap:wrap;gap:12px}
+  }
   /* region switcher */
   .regionswitch{position:relative}
   .globe{cursor:pointer}
@@ -234,6 +266,16 @@
       <div class="wcard"><h3>Pay globally</h3><p>Spend anywhere Mastercard is accepted, across 150+ currencies and 210+ countries.</p></div>
     </div>
     <p class="fineprint">Card features subject to WorldFirst&rsquo;s terms; fees and cashback vary by market and currency.</p>
+  </section>
+
+  <!-- NEW CUSTOMER BOOST -->
+  <section class="boost wrap">
+    <div class="boostcard">
+      <div class="beye">New customer</div>
+      <div class="bbig">5.2% cashback</div>
+      <div class="blab">on your first US$3,000 of spend</div>
+      <p>A limited-period boost for new WorldFirst customers.</p>
+    </div>
   </section>
 
   <!-- HOW TO ENTER -->
