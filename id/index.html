@@ -135,39 +135,7 @@
   .fbar{margin-top:18px;display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:#9aa1a1}
 
   .chat{position:fixed;right:22px;bottom:22px;width:56px;height:56px;border-radius:50%;background:#ff0051;box-shadow:0 8px 24px rgba(255,0,81,.4);z-index:50}
-  @media(max-width:900px){
-    .wrap{padding:0 20px}
-    .hero{padding:34px 0 18px}
-    .hero-in,.grid3,.sblock{grid-template-columns:1fr;gap:26px}
-    .hero-l h1{font-size:34px}
-    .hero-l p.sub{font-size:15px;margin:14px 0 20px}
-    .sechead{font-size:29px}
-    .sblock h2{font-size:25px}
-    .whysub{font-size:15px}
-    .fcols{grid-template-columns:1fr 1fr}
-    .nav .mid{display:none}
-    .boostcard{padding:26px 24px}
-    .boostcard .bbig{font-size:38px}
-    .prizevis,.photovis{height:260px}
-    .prizevis .big{font-size:96px}
-    .fcta{padding:48px 18px}
-    .fcta h2{font-size:27px}
-  }
-  @media(max-width:560px){
-    .hero-l h1{font-size:29px}
-    .sechead{font-size:24px}
-    .boostcard{padding:22px 20px}
-    .boostcard .bbig{font-size:30px}
-    .boostcard .blab{font-size:15px}
-    .appicon{width:54px;height:54px;border-radius:15px}
-    .prizevis .big{font-size:78px}
-    .fcta h2{font-size:22px}
-    .fcta .row{flex-direction:column}
-    .fcols{grid-template-columns:1fr}
-    .nav{padding:0 16px}
-    .login{display:none}
-    .cta-row{flex-wrap:wrap;gap:12px}
-  }
+  
   /* region switcher */
   .regionswitch{position:relative}
   .globe{cursor:pointer}
@@ -215,6 +183,40 @@
   .appicon.dark .mono{color:#1f2323}
   .appicon.light{background:#fff;border:1px solid #eceef1}
   .appicon img.full{width:74%;height:74%;object-fit:contain;filter:none}
+
+  @media(max-width:900px){
+    .wrap{padding:0 20px}
+    .hero{padding:34px 0 18px}
+    .hero-in,.grid3,.sblock{grid-template-columns:1fr;gap:26px}
+    .hero-l h1{font-size:34px}
+    .hero-l p.sub{font-size:15px;margin:14px 0 20px}
+    .sechead{font-size:29px}
+    .sblock h2{font-size:25px}
+    .whysub{font-size:15px}
+    .fcols{grid-template-columns:1fr 1fr}
+    .nav .mid{display:none}
+    .boostcard{padding:26px 24px}
+    .boostcard .bbig{font-size:38px}
+    .prizevis,.photovis{height:260px}
+    .prizevis .big{font-size:96px}
+    .fcta{padding:48px 18px}
+    .fcta h2{font-size:27px}
+  }
+  @media(max-width:560px){
+    .hero-l h1{font-size:29px}
+    .sechead{font-size:24px}
+    .boostcard{padding:22px 20px}
+    .boostcard .bbig{font-size:30px}
+    .boostcard .blab{font-size:15px}
+    .appicon{width:54px;height:54px;border-radius:15px}
+    .prizevis .big{font-size:78px}
+    .fcta h2{font-size:22px}
+    .fcta .row{flex-direction:column}
+    .fcols{grid-template-columns:1fr}
+    .nav{padding:0 16px}
+    .login{display:none}
+    .cta-row{flex-wrap:wrap;gap:12px}
+  }
 </style>
 </head>
 <body>
