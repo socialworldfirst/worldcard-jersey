@@ -165,6 +165,24 @@
   .tools{padding:26px 0 44px;text-align:center}
   .logos{display:flex;flex-wrap:wrap;gap:22px 40px;justify-content:center;align-items:center;margin-top:24px;opacity:.65;font-weight:700;font-size:19px;color:#5b626a}
 
+
+  /* colourful app-icon belt */
+  .belt{margin-top:36px;padding:30px 0 6px;overflow:hidden;position:relative}
+  .belt-label{text-align:center;font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;color:#9aa1a1;font-weight:700;margin-bottom:28px}
+  .belt::before,.belt::after{content:"";position:absolute;top:0;bottom:0;width:88px;z-index:2;pointer-events:none}
+  .belt::before{left:0;background:linear-gradient(90deg,#fff,rgba(255,255,255,0))}
+  .belt::after{right:0;background:linear-gradient(270deg,#fff,rgba(255,255,255,0))}
+  .track{display:flex;gap:20px;width:max-content;animation:beltscroll 72s linear infinite}
+  .belt:hover .track{animation-play-state:paused}
+  @keyframes beltscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .appicon{width:64px;height:64px;border-radius:17px;display:flex;align-items:center;justify-content:center;flex:none;transition:transform .2s}
+  .appicon:hover{transform:translateY(-4px)}
+  .appicon img{width:54%;height:54%;object-fit:contain;filter:brightness(0) invert(1)}
+  .appicon .mono{color:#fff;font-family:'Satoshi',sans-serif;font-weight:800;font-size:13px;letter-spacing:-.03em;text-align:center;line-height:1;padding:0 5px}
+  .appicon.dark img{filter:brightness(0)}
+  .appicon.dark .mono{color:#1f2323}
+  .appicon.light{background:#fff;border:1px solid #eceef1}
+  .appicon img.full{width:74%;height:74%;object-fit:contain;filter:none}
 </style>
 </head>
 <body>
@@ -198,6 +216,12 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- WORKS WITH TOOLS (belt, moved up under hero) -->
+  <section class="belt">
+    <div class="belt-label">Works with the tools you already pay for</div>
+    <div class="track"><div class="appicon" style="background:#0467DF" title="Meta"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/meta.svg" alt="Meta" loading="lazy"></div><div class="appicon" style="background:#000000" title="TikTok"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/tiktok.svg" alt="TikTok" loading="lazy"></div><div class="appicon light" title="Google Ads"><img class="full" src="../assets/logos/googleads.png" alt="Google Ads" loading="lazy"></div><div class="appicon" style="background:#FF9900" title="Amazon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazon.svg" alt="Amazon" loading="lazy"></div><div class="appicon" style="background:#EE4D2D" title="Shopee"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/shopee.svg" alt="Shopee" loading="lazy"></div><div class="appicon light" title="Lazada"><img class="full" src="../assets/logos/lazada.png" alt="Lazada" loading="lazy"></div><div class="appicon" style="background:#FF4747" title="AliExpress"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/aliexpress.svg" alt="AliExpress" loading="lazy"></div><div class="appicon" style="background:#FF6A00" title="Alibaba"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/alibabadotcom.svg" alt="Alibaba" loading="lazy"></div><div class="appicon" style="background:#FF6600" title="1688.com"><span class="mono">1688</span></div><div class="appicon" style="background:#E94F20" title="Taobao"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/taobao.svg" alt="Taobao" loading="lazy"></div><div class="appicon dark" style="background:#FFCC00" title="DHL"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/dhl.svg" alt="DHL" loading="lazy"></div><div class="appicon" style="background:#4D148C" title="FedEx"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/fedex.svg" alt="FedEx" loading="lazy"></div><div class="appicon light" title="Ninja Van"><img class="full" src="../assets/logos/ninjavan.png" alt="Ninja Van" loading="lazy"></div><div class="appicon" style="background:#232F3E" title="AWS"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazonwebservices.svg" alt="AWS" loading="lazy"></div><div class="appicon light" title="Huawei Cloud"><img class="full" src="../assets/logos/huaweicloud.png" alt="Huawei Cloud" loading="lazy"></div><div class="appicon" style="background:#FF6A00" title="Alibaba Cloud"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/alibabacloud.svg" alt="Alibaba Cloud" loading="lazy"></div><div class="appicon" style="background:#000000" title="ChatGPT"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/openai.svg" alt="ChatGPT" loading="lazy"></div><div class="appicon" style="background:#D97757" title="Claude"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/claude.svg" alt="Claude" loading="lazy"></div><div class="appicon" style="background:#4285F4" title="Google Workspace"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/google.svg" alt="Google Workspace" loading="lazy"></div><div class="appicon light" title="Agoda"><img class="full" src="../assets/logos/agoda.png" alt="Agoda" loading="lazy"></div><div class="appicon light" title="Traveloka"><img class="full" src="../assets/logos/traveloka.png" alt="Traveloka" loading="lazy"></div><div class="appicon" style="background:#0467DF" title="Meta"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/meta.svg" alt="Meta" loading="lazy"></div><div class="appicon" style="background:#000000" title="TikTok"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/tiktok.svg" alt="TikTok" loading="lazy"></div><div class="appicon light" title="Google Ads"><img class="full" src="../assets/logos/googleads.png" alt="Google Ads" loading="lazy"></div><div class="appicon" style="background:#FF9900" title="Amazon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazon.svg" alt="Amazon" loading="lazy"></div><div class="appicon" style="background:#EE4D2D" title="Shopee"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/shopee.svg" alt="Shopee" loading="lazy"></div><div class="appicon light" title="Lazada"><img class="full" src="../assets/logos/lazada.png" alt="Lazada" loading="lazy"></div><div class="appicon" style="background:#FF4747" title="AliExpress"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/aliexpress.svg" alt="AliExpress" loading="lazy"></div><div class="appicon" style="background:#FF6A00" title="Alibaba"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/alibabadotcom.svg" alt="Alibaba" loading="lazy"></div><div class="appicon" style="background:#FF6600" title="1688.com"><span class="mono">1688</span></div><div class="appicon" style="background:#E94F20" title="Taobao"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/taobao.svg" alt="Taobao" loading="lazy"></div><div class="appicon dark" style="background:#FFCC00" title="DHL"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/dhl.svg" alt="DHL" loading="lazy"></div><div class="appicon" style="background:#4D148C" title="FedEx"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/fedex.svg" alt="FedEx" loading="lazy"></div><div class="appicon light" title="Ninja Van"><img class="full" src="../assets/logos/ninjavan.png" alt="Ninja Van" loading="lazy"></div><div class="appicon" style="background:#232F3E" title="AWS"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazonwebservices.svg" alt="AWS" loading="lazy"></div><div class="appicon light" title="Huawei Cloud"><img class="full" src="../assets/logos/huaweicloud.png" alt="Huawei Cloud" loading="lazy"></div><div class="appicon" style="background:#FF6A00" title="Alibaba Cloud"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/alibabacloud.svg" alt="Alibaba Cloud" loading="lazy"></div><div class="appicon" style="background:#000000" title="ChatGPT"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/openai.svg" alt="ChatGPT" loading="lazy"></div><div class="appicon" style="background:#D97757" title="Claude"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/claude.svg" alt="Claude" loading="lazy"></div><div class="appicon" style="background:#4285F4" title="Google Workspace"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/google.svg" alt="Google Workspace" loading="lazy"></div><div class="appicon light" title="Agoda"><img class="full" src="../assets/logos/agoda.png" alt="Agoda" loading="lazy"></div><div class="appicon light" title="Traveloka"><img class="full" src="../assets/logos/traveloka.png" alt="Traveloka" loading="lazy"></div></div>
   </section>
 
   <!-- WHY WORLD CARD (moved up: cashback benefit leads, cohesive with the cashback ads) -->
@@ -247,12 +271,6 @@
       </div>
       <div class="vis"><div class="photovis"><img src="../assets/approved_2.png" alt="Argentina national team in official kit"></div></div>
     </div>
-  </section>
-
-  <!-- WORKS WITH TOOLS -->
-  <section class="tools wrap">
-    <h2 class="sechead">Works with the tools you already pay for</h2>
-    <div class="logos"><span>1688</span><span>Amazon</span><span>Shopify</span><span>Meta Ads</span><span>Google Ads</span><span>TikTok</span></div>
   </section>
 
 
