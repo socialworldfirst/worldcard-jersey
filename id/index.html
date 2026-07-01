@@ -184,7 +184,10 @@
   .appicon.light{background:#fff;border:1px solid #eceef1}
   .appicon img.full{width:74%;height:74%;object-fit:contain;filter:none}
 
+  .jerseybox.jb-mob{display:none}
   @media(max-width:900px){
+    .jerseybox.jb-desk{display:none}
+    .jerseybox.jb-mob{display:block;margin-top:24px;max-width:none}
     .wrap{padding:0 20px}
     .hero{padding:34px 0 18px}
     .hero-in,.grid3,.sblock{grid-template-columns:1fr;gap:26px}
@@ -257,7 +260,7 @@
           <a class="btn primary card-link" href="https://portal.worldfirst.com/worldcard?lang=en-GB&region=ID" style="font-size:16px;padding:14px 30px">Get a World Card</a>
           <a class="btn ghost" href="https://www.worldfirst.com/id/product/pay/world-card/" target="_blank" rel="noopener">Learn about World Card</a>
         </div>
-        <div class="jerseybox">
+        <div class="jerseybox jb-desk">
           <div class="jbeye">The draw</div>
           <p class="jbt">Win a signed Argentina team jersey</p>
           <a class="jbr rules-link" href="rules.html">See full rules &rarr;</a>
@@ -269,6 +272,11 @@
           <span class="herolock" style="position:absolute;left:18px;top:18px;display:inline-flex;flex-direction:column;align-items:center;gap:9px;filter:drop-shadow(0 2px 9px rgba(0,0,0,.6))"><span style="display:inline-flex;align-items:center;gap:12px"><img src="../assets/afa_crest_color.svg" alt="AFA" style="height:52px"><span style="width:1px;height:36px;background:rgba(255,255,255,.6)"></span><img src="../assets/logo.svg" alt="WorldFirst" style="height:21px;filter:brightness(0) invert(1)"></span><span style="font-family:'Satoshi',sans-serif;font-weight:700;font-size:9px;letter-spacing:.09em;text-transform:uppercase;color:#fff;text-align:center;line-height:1.35">Official Regional Sponsor of the<br>Argentine National Football Team</span></span>
         </div>
       </div>
+      <div class="jerseybox jb-mob">
+          <div class="jbeye">The draw</div>
+          <p class="jbt">Win a signed Argentina team jersey</p>
+          <a class="jbr rules-link" href="rules.html">See full rules &rarr;</a>
+        </div>
     </div>
   </section>
 
